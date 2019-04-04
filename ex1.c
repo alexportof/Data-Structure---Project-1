@@ -7,19 +7,19 @@ int *fneuronio(int *input, int *weight, int max,int limiart, int *excitement){
     {
         somap = somap + (*(input+i) * *(weight+i)); 
     }
-    
+
     if (somap > limiart) {
         *excitement = 1;
     }
     else {
         *excitement = 0;    
     }
+
     return excitement;
 }
 
 int main(){
-    int input[10],weight[10],limiart, excitement,*ptr,*excitement_returned;
-    ptr = &excitement;
+    int input[10],weight[10],limiart,ptr[1],*excitement_returned;
 
     printf("Olá, por favor forneca os 10 valores de entrada\n");
 
@@ -36,9 +36,15 @@ int main(){
     }
 
     printf("Agora forneça o valor do limiar T\n");
+    
     scanf("%d", &limiart);
 
-     excitement_returned = fneuronio(input, weight, 10, limiart, ptr);
+    excitement_returned = fneuronio(input, weight, 10, limiart, ptr);
+
+    if(*excitement_returned == 1)
+    printf("Neurônio ativado!\n");
+    else
+    printf("Neurôno inibido!\n");
     
     
     
