@@ -1,26 +1,27 @@
 #include <stdio.h>
 
-//void fneuronio(int *input, int *weight, int max,int limiart, int *excitement){
-    // int somap = 0;
+int *fneuronio(int *input, int *weight, int max,int limiart, int *excitement){
+    int somap = 0;
 
-    // for(int i = 0; i < max; i++)
-    // {
-    //     somap = somap + *(input+i) + *(weight+i); 
-    // }
+    for(int i = 0; i < max; i++)
+    {
+        somap = somap + *(input+i) + *(weight+i); 
+    }
 
-    // if (somap > limiart) {
-    //     *pexcitement = 1;
-    // }
-    // else {
-    //     *pexcitement = 0;
-    // }
+    if (somap > limiart) {
+        
+    }
+    else {
+        
+    }
     
     
     
-//}
+}
 
 int main(){
-    int input[10],weight[10],limiart, excitement;
+    int input[10],weight[10],limiart, excitement,*ptr,*excitement_returned;
+    ptr = &excitement;
 
     printf("Olá, por favor forneca os 10 valores de entrada\n");
 
@@ -39,7 +40,7 @@ int main(){
     printf("Agora forneça o valor do limiar T\n");
     scanf("%d", &limiart);
 
-   // fneuronio(*input, *weight, 10, limiart, excitement);
+     excitement_returned = fneuronio(input, weight, 10, limiart, ptr);
     
     
     
