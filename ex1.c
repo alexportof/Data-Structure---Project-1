@@ -5,18 +5,16 @@ int *fneuronio(int *input, int *weight, int max,int limiart, int *excitement){
 
     for(int i = 0; i < max; i++)
     {
-        somap = somap + *(input+i) + *(weight+i); 
+        somap = somap + (*(input+i) * *(weight+i)); 
     }
-
+    
     if (somap > limiart) {
-        
+        *excitement = 1;
     }
     else {
-        
+        *excitement = 0;    
     }
-    
-    
-    
+    return excitement;
 }
 
 int main(){
