@@ -1,4 +1,4 @@
-# Data-Structure---Project-1
+# Data-Structure-Project-1
 
 exercício 1 - gcc ex1.c -o ex
 
