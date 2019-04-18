@@ -1,3 +1,6 @@
+// nome : Álex Porto Ferreira
+// matricula: 170119815
+
 #include <stdio.h>
 
 int move_disc(int disc,char ori, char dest, char aux){

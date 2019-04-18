@@ -1,3 +1,6 @@
+// nome : Álex Porto Ferreira
+// matricula: 170119815
+
 #include <stdio.h>
 
 int *fneuronio(int *input, int *weight, int max,int limiart, int *excitement){

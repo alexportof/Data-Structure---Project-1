@@ -1,3 +1,6 @@
+// nome : Álex Porto Ferreira
+// matricula: 170119815
+
 #include <stdio.h>
 
 int *recebe_notas(int *apr, int qnt){
